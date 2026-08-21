@@ -1,0 +1,113 @@
+Q1. Open Power BI Desktop, load the provided 'Sample Data' Excel file, and switch between Report View, Data View, and Model View to observe how the data is displayed differently in each.
+Ans:- Steps:
+Open Power BI Desktop.
+Click Home → Get Data → Excel Workbook.
+Select the provided Sample Data Excel file.
+Select the required sheet/table.
+Click Load.
+After loading the data, explore the three views:
+Report View
+Data View
+Model View
+Difference between the three views:
+
+Report View:
+Used to create charts, tables, cards, and other visualizations from
+the data.
+
+Data View:
+Shows the actual rows and columns of the imported data. It is useful for checking and understanding the data.
+
+Model View:
+Shows the tables and the relationships between them. It is mainly used for managing the data model.
+
+Q2. In the Report View, use the Fields Pane to drag any two different fields onto the canvas and create two separate visualizations (for example, a bar chart and a pie chart).
+Ans:- Steps:
+Go to Report View.
+Select a Bar Chart from the Visualizations section.
+From the Fields Pane, drag one field into the appropriate field well.
+
+For example:
+
+Drag City into the Axis.
+Drag Sales into the Values.
+
+A bar chart showing sales by city will be created.
+
+Now select a Pie Chart.
+Drag another field into the pie chart.
+
+For example:
+Drag Category into Legend.
+Drag Sales into Values.
+
+Now you have created two separate visualizations.
+
+Result:
+Visualization 1 → Bar Chart
+Visualization 2 → Pie Chart
+
+Q3. Use the Filters Pane in Report View to add a filter that only shows data for a specific value (for example, filter to display sales data for one city or category only).
+Ans:- Steps:
+Stay in Report View.
+Look at the Filters Pane on the right side.
+Drag a field such as City into the Filters on this page section.
+Select one specific city from the filter.
+The report will now display data only for the selected city.
+Example:
+
+If the City field contains:
+
+Ahmedabad
+Mumbai
+Delhi
+Pune
+Select Ahmedabad.
+
+The visuals will now show only the data related to Ahmedabad.
+
+Purpose:
+Filters help us display only the data that we want to analyze.
+
+Q4. Explore the Ribbon commands under the Home and Insert tabs: add a new page to your report, and then insert a text box with your name on it.
+Ans:- A. Add a New Page
+At the bottom of the Power BI report, click the + (plus) button.
+A new report page will be created.
+You can rename the page if required.
+B. Insert a Text Box
+Go to the Insert tab in the Ribbon.
+Select Text box.
+A text box will appear on the report canvas.
+Type your name inside it.
+Adjust the size and position of the text box.
+
+Example:
+Name: Himanshi Agrawal
+
+Q5. Switch to the Model View and use the Visualizations Pane to check relationships between tables; then, rename one field in the Fields Pane to make it more readable
+(for example, change 'Cust_ID' to 'Customer ID').<br><br><em><strong>Hint:</strong> Right-click the field name to rename it directly in the Fields Pane.</em>
+Ans:- A. Check Relationships
+Click Model View from the left-side navigation.
+You will see the tables in your data model.
+If there are multiple tables, check the lines connecting them.
+These lines represent relationships between tables.
+Click on a relationship to see which columns are being used to connect the tables.
+
+Example:
+Customers[Customer ID] → Orders[Customer ID]
+
+This means the Customer ID field is used to connect the Customers and Orders tables.
+If your Sample Data contains only one table, you may not see any relationship lines. That is normal.
+
+B. Rename a Field
+Go to the Fields/Data Pane.
+Find the field named Cust_ID.
+Right-click on Cust_ID.
+Select Rename.
+Change the name to:
+
+Customer ID
+
+Press Enter.
+Why rename fields?
+Renaming fields makes the report easier to understand and gives columns more meaningful names.
