@@ -1,0 +1,54 @@
+Q1. Import a CSV file of Zomato restaurant listings into Power BI and use the 'Split Column by Delimiter' feature to separate the 'Restaurant Name - Area' column into two columns: 'Restaurant Name' and 'Area'.
+Ans:- Steps:
+Open Power BI Desktop.
+Go to Home → Get Data → Text/CSV.
+Select the Zomato restaurant CSV file.
+Click Transform Data to open Power Query Editor.
+Select the Restaurant Name - Area column.
+Go to Transform → Split Column → By Delimiter.
+Select the delimiter used between the restaurant name and area, such as " - ".
+Select Split at the left-most delimiter if appropriate.
+Click OK.
+Rename the resulting columns:
+First column → Restaurant Name
+Second column → Area
+
+Q2. Use the 'Merge Columns' feature in Power BI to combine 'First Name' and 'Last Name' columns from a Flipkart user data table into a single 'Full Name' column, separated by a space.
+Ans:- Steps:
+Open the Flipkart user table in Power Query Editor.
+Select the First Name column.
+Hold Ctrl and select Last Name.
+Go to Transform → Merge Columns.
+Select Space as the separator.
+Enter the new column name:
+Full Name
+Click OK.
+
+Q3. Replace all instances of the value 'Cancelled' with 'Order Failed' in the 'Order Status' column of a Swiggy orders dataset using Power BI's 'Replace Values' function.
+Ans:- Steps:
+Open the Swiggy orders table in Power Query Editor.
+Select the Order Status column.
+Go to Transform → Replace Values.
+In Value To Find, enter:
+
+Cancelled
+In Replace With, enter:
+
+Order Failed
+Click OK.
+
+Q4. Change the data type of the 'Order Amount' column from Text to Decimal Number in a Paytm transaction table in Power BI, and verify that the column now supports numerical calculations.
+Ans:- Steps:
+Open the Paytm transaction table in Power Query Editor.
+Select the Order Amount column.
+Click the Data Type icon on the column header.
+Select Decimal Number.
+If Power BI asks for confirmation, select Replace Current.
+
+Q5. In a Movie Ticket Booking dataset (like BookMyShow), use the 'Fill Down' operation in Power BI to fill missing 'Movie Name' values based on the previous row's value
+.<br><br><em><strong>Hint:</strong> Blank rows for 'Movie Name' should inherit the name from the last non-blank entry above.</em>
+Ans:- Steps:
+Open the Movie Ticket Booking dataset in Power Query Editor.
+Select the Movie Name column.
+Go to Transform → Fill → Down.
+Power Query will fill the blank values with the previous non-blank value.
