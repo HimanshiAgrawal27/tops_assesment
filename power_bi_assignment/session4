@@ -1,0 +1,61 @@
+Q1. Open Power Query Editor (PQE) in Power BI and load a sample dataset of IPL cricket matches (download from Kaggle or use any CSV with match details).
+Ans:- Steps:
+Open Power BI Desktop.
+Click Home → Get Data → Text/CSV.
+Select the IPL matches CSV file.
+In the preview window, click Transform Data.
+Power Query Editor will open.
+Check the columns and data in the dataset.
+
+Q2. In PQE, remove all columns except for 'Team 1', 'Team 2', 'Winner', and 'Venue' to focus only on the most relevant details for a quick match summary.
+Ans:- We need only four columns:
+Team 1
+Team 2
+Winner
+Venue
+Steps:
+Select Team 1.
+Hold Ctrl and select Team 2, Winner, and Venue.
+Right-click on any selected column.
+Select Remove Other Columns.
+Now only the four required columns will remain.
+
+Q3. Use the Remove Rows feature in PQE to delete the first 2 rows and any rows where the 'Winner' column is null or empty.
+Ans:- A. Remove First 2 Rows
+Go to Home → Remove Rows.
+Select Remove Top Rows.
+Enter 2.
+Click OK.
+
+The first two rows will be deleted.
+
+B. Remove Null/Empty Winner Rows
+Click the filter arrow on the Winner column.
+Find (null) or blank values.
+Uncheck the null/blank value.
+Click OK.
+Now only rows with a valid Winner value will remain.
+
+Q4. Find and remove duplicate rows in your IPL dataset based on 'Team 1', 'Team 2', and 'Venue' columns.<br><br><em><strong>Hint:</strong> Use the 'Remove Duplicates' option after selecting these columns.</em>
+Ans:- We need to remove duplicate rows based on:
+
+Team 1 + Team 2 + Venue
+
+Steps:
+Select the Team 1 column.
+Hold Ctrl and select Team 2 and Venue.
+Go to Home → Remove Rows → Remove Duplicates.
+
+Power Query will keep the first occurrence and remove the duplicate combinations.
+
+Q5. Handle any error rows in your dataset by replacing errors in the 'Winner' column with the value 'Unknown', then load the cleaned data to Power BI.
+<br><br><em><strong>Hint:</strong> Right-click the column and use 'Replace Errors'.</em>
+Ans:- If the Winner column contains error values, we need to replace those errors with Unknown.
+Steps:
+Right-click the Winner column.
+Select Replace Errors.
+Enter:
+
+Unknown
+Click OK.
+The errors in the Winner column will now be replaced with Unknown.
