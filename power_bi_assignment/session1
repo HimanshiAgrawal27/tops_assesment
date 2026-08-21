@@ -1,1 +1,40 @@
 
+Q1.Download and install Power BI Desktop on your computer, then open the application and take a screenshot of the blank report interface.
+Ans:- 
+Q2.Explore the Power BI Desktop interface and identify the following components: Report View, Data View, Model View, Fields Pane, Visualizations Pane, and Filters Pane. Write a short description (1-2 lines) for each component.
+Ans:- 1. Report View
+Report View is used to create and design reports. We can add charts, tables, cards, slicers, and other visuals to the report page.
+
+2. Data View
+Data View allows us to see the actual data loaded into Power BI in a table format. We can check columns, rows, and data values here.
+
+3. Model View
+Model View is used to see and manage relationships between different tables. We can create and edit relationships between tables in this view.
+
+4. Fields Pane
+The Fields Pane displays the tables, columns, and measures available in the Power BI report. We can drag these fields into visuals to analyze the data.
+
+5. Visualizations Pane
+The Visualizations Pane contains different types of charts and visuals such as bar charts, pie charts, tables, cards, and line charts. It is used to create and format visuals.
+
+6. Filters Pane
+The Filters Pane is used to filter the data displayed in a report or visual. Filters can be applied to a specific visual, a report page, or the entire report.
+
+Q3.Create a new blank report in Power BI Desktop and add a table visual using the Visualizations Pane. Rename the report page to 'My First Dashboard'.
+Ans:-Open Power BI Desktop.
+Create a New Blank Report.
+Go to Report View.
+From the Visualizations section, select the Table visual.
+A blank table visual will appear on the report canvas.
+Rename the report page from Page 1 to My First Dashboard.
+To rename the page, right-click on the page tab at the bottom and select Rename, or double-click the page name.
+Enter My First Dashboard.
+
+Final Page Name:
+My First Dashboard
+
+Q4.List 3 key differences between Excel Dashboards and Power BI Dashboards, focusing on features or workflows you noticed while exploring Power BI Desktop.
+Ans:- Excel Dashboard	Power BI Dashboard
+Excel dashboards are mainly created using formulas, PivotTables, PivotCharts, and Excel charts.	Power BI provides many built-in interactive visuals and dashboard features.
+Data is often imported or copied into Excel worksheets and then analyzed.	Power BI can connect directly to many data sources such as Excel, SQL Server, CSV, and other databases.
+Excel dashboards generally require more manual updating and formatting.	Power BI provides easier data refresh, interactive filters, slicers, and cross-filtering between visuals.
