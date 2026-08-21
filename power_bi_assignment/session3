@@ -1,0 +1,89 @@
+Q1. Open Power BI Desktop and connect to an Excel file containing a list of your favorite restaurants (name, cuisine, rating). Load the data using the Import mode.
+Ans:- Steps:
+Open Power BI Desktop.
+Go to Home → Get Data → Excel Workbook.
+Select the Excel file containing the restaurant data.
+Select the required sheet/table.
+Click Load.
+The data will be loaded into Power BI.
+Go to Data View to check the imported data.
+
+Import Mode:
+Power BI loads a copy of the data into its model. This allows faster report performance and lets us work with the data even when the original Excel file is not currently open.
+
+Result:
+The restaurant data is successfully imported into Power BI.
+
+Q2. Connect Power BI Desktop to a CSV file that contains IPL cricket match results (team names, scores, date). Use the DirectQuery mode and explain in one line how DirectQuery differs from Import for this data.
+Ans:- Steps:
+Open Power BI Desktop.
+Select Home → Get Data → Text/CSV.
+Select the IPL CSV file.
+Preview the data.
+Click Load.
+
+Important Note About DirectQuery
+A CSV file is normally loaded into Power BI using Import mode; DirectQuery is not supported for a standard CSV file in Power BI Desktop.
+
+One-line explanation:
+Import loads a copy of the data into Power BI, while DirectQuery keeps the data in the original supported source and sends queries to that source when the report is used.
+
+If the assignment specifically requires DirectQuery:
+Use a supported database such as SQL Server or MySQL for the IPL data instead of CSV, and select the DirectQuery option while connecting.
+
+Q3. Use Power BI's Web connector to import trending movie data from a public web page (such as IMDb Top 250 or a similar site). Display the movie titles and ratings in a table visual.<br><br><em><strong>Hint:</strong> Use the 'Get Data' > 'Web' option and enter the URL of the table page.</em>
+Ans:- Steps:
+Open Power BI Desktop.
+Go to Home → Get Data → Web.
+Enter the URL of a public webpage containing movie information.
+Click OK.
+Power BI will open the Navigator window.
+Select the table containing movie information.
+Click Load.
+Go to Report View.
+Select the Table visual.
+Add the Movie Title and Rating fields to the table.
+
+Result:
+The table visual displays movie names and their ratings.
+
+Q4. Connect Power BI to a MySQL or SQL Server database (use a sample database if you don't have your own) and load a table of products (like those on Flipkart or Myntra) with columns for name, price, and category.
+Ans:- Steps for SQL Server:
+Open Power BI Desktop.
+Click Home → Get Data → SQL Server.
+Enter the Server Name.
+Enter the Database Name, if required.
+Choose Import or DirectQuery.
+Select the required Products table.
+Click Load.
+Check the data in Data View.
+
+Q5. Combine data from two different sources in Power BI: an Excel file with Zomato restaurant data and a CSV file with user reviews. Create a relationship between 
+the tables and display the average rating per restaurant.<br><br><em><strong>Hint:</strong> Use the 'Manage Relationships' feature to link the tables on restaurant
+name or ID.</em>
+Ans:- Steps:
+Step 1 – Load Excel Data
+Go to Home → Get Data → Excel Workbook.
+Select the Zomato restaurant Excel file.
+Click Load.
+Step 2 – Load CSV Data
+Go to Home → Get Data → Text/CSV.
+Select the reviews CSV file.
+Click Load.
+Step 3 – Create Relationship
+Go to Model View.
+Find the Restaurant table and Reviews table.
+Connect the common field
+
+For example:
+Restaurant[Restaurant ID] → Reviews[Restaurant ID]
+
+If required, go to Modeling → Manage Relationships → New.
+Select the two tables and matching columns.
+Click OK.
+Step 4 – Create Average Rating
+Go to Report View.
+Add a Table visual.
+Add Restaurant Name from the Restaurant table.
+Add Rating from the Reviews table.
+Change the aggregation of Rating to Average.
